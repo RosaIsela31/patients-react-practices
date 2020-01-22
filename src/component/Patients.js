@@ -1,17 +1,37 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Form from './Form';
+import Appointment from './Appointment'
 
 const Patients = () => {
+  // Agregando un estado para citas, esas citas se van a almacenar aquí, en el componente principal
+  const [ allAppointment, setAllAppointment ] = useState([])
+
+  // Función que tome las citas actuales y agregué la nueva
+  const createAppointment = (appoint) => { 
+    setAllAppointment([
+      ...allAppointment,
+       appoint
+    ])
+  }
+
   return ( 
     <Fragment>
-      <h1>Patient management</h1>
+      <h1>Administrador de Pacientes</h1>
       <div className='container'>
         <div className='row'>
           <div className='one-half column'>
-            <Form />
+            <Form 
+              createAppointment={createAppointment}
+            />
           </div>
           <div className='one-half column'>
-            2
+            <h2>Administra tus citas</h2>
+            {allAppointment.map(item => (
+              <Appointment 
+                key={item.id}
+                appointment={item}
+              />
+              ))}
           </div>
         </div>
       </div>
