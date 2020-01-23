@@ -14,6 +14,12 @@ const Patients = () => {
     ])
   }
 
+  // Función que elimina una cita por su id
+  const deleteAppointment = (id) => {
+    const newAppointment = allAppointment.filter(item =>  item.id !== id);
+    setAllAppointment(newAppointment)
+  }
+
   return ( 
     <Fragment>
       <h1>Administrador de Pacientes</h1>
@@ -30,6 +36,7 @@ const Patients = () => {
               <Appointment 
                 key={item.id}
                 appointment={item}
+                deleteAppointment={deleteAppointment}
               />
               ))}
           </div>
