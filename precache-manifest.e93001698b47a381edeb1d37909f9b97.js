@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df7c14800a4ea5b19caa82051ec9a4fb",
+    "revision": "38aa815c2069b5815601e2b4949d9dcf",
     "url": "/patients-react-practices/index.html"
   },
   {
-    "revision": "79c552b8a1c8ad85f163",
+    "revision": "6a0fff756c4ed2d5cab2",
     "url": "/patients-react-practices/static/css/main.4c798faf.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/patients-react-practices/static/js/2.eb6d8ea1.chunk.js.LICENSE"
   },
   {
-    "revision": "79c552b8a1c8ad85f163",
-    "url": "/patients-react-practices/static/js/main.e89d7fed.chunk.js"
+    "revision": "6a0fff756c4ed2d5cab2",
+    "url": "/patients-react-practices/static/js/main.e0b6cfe5.chunk.js"
   },
   {
     "revision": "2674b6647d464543ba21",
