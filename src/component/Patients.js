@@ -15,6 +15,8 @@ const Patients = () => {
  
   // useEffect parra realizar ciertas operaciones cuándo el state cambia
   useEffect( () => {
+    let initialAppointments = JSON.parse(localStorage.getItem('citas'))
+
     if(initialAppointments){
       //Stringify lo está convirtiendo a un arreglo porque es lo único que soporta localstorage
       localStorage.setItem('citas', JSON.stringify(allAppointment))

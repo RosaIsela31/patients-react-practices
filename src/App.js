@@ -8,7 +8,7 @@ import './index.css';
 function App() {
   return (
     <BrowserRouter>
-      <Route exact path='/' component={Patients} />
+      <Route path='/' component={Patients} />
     </BrowserRouter>
   );
 }
