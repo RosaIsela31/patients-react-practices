@@ -20,6 +20,10 @@ const Patients = () => {
     setAllAppointment(newAppointment)
   }
 
+  // Mensaje condicional
+  const title = allAppointment.length === 0 ? 'No hay citas' : 'Administra tus citas' 
+  
+
   return ( 
     <Fragment>
       <h1>Administrador de Pacientes</h1>
@@ -31,7 +35,7 @@ const Patients = () => {
             />
           </div>
           <div className='one-half column'>
-            <h2>Administra tus citas</h2>
+            <h2>{title}</h2>
             {allAppointment.map(item => (
               <Appointment 
                 key={item.id}
